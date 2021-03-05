@@ -342,9 +342,9 @@ p {
   color: #d44e19 !important;
 }
 .bg-footer {
-  /* background: #202214; */
+  /* background: #202214;
   background-image: url('/images/Group 44.png');
-  background-size: cover;
+  background-size: cover; */
 }
 .absolute::after {
   position: absolute;
