@@ -36,28 +36,28 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-lg-auto">
-          <li class="nav-item active pl-lg-3 pr-lg-3">
-            <a class="nav-link text-dark active" href="trendedprojects.html">Trended Projects</a>
+          <li class="nav-item pl-lg-3 pr-lg-3">
+            <a class="active nav-link text-dark" href="trendedprojects.html">Completed Projects</a>
+          </li>
+          <li class="nav-item pl-lg-3 pr-lg-3 dropdown dropdown-slide dropdown-hover">
+            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">
+              Who we are
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="certifications.html">Our Certifications</a>
+              <a class="dropdown-item" href="policies.html">Our Policies</a>
+            </div>
           </li>
           <li class="nav-item pl-lg-3 pr-lg-3">
-            <a class="nav-link text-dark" href="home.html">Who we are</a>
-          </li>
-          <li class="nav-item pl-lg-3 pr-lg-3">
-            <a class="nav-link text-dark" href="home.html">Live Projects</a>
+            <a class="nav-link text-dark" href="home.html#liveprojects">Live Projects</a>
           </li>
           <!-- <li class="nav-item pl-lg-3 pr-lg-3">
             <a class="nav-link text-dark" href="#news">Deep Insights</a>
           </li> -->
-          <li class="nav-item dropdown dropdown-slide dropdown-hover">
-            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false" style="cursor: pointer;">
-              Deep Insights
+          <li class="nav-item pl-lg-3 pr-lg-3">
+            <a class="nav-link text-dark" href="home.html#news">
+              News Articles
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="certifications.html">Our Certifications</a>
-              <a class="dropdown-item" href="home.html">News Articles</a>
-              <a class="dropdown-item" href="home.html">Gallery</a>
-            </div>
           </li>
           <!-- <li class="nav-item pl-lg-3 pr-lg-3">
             <a class="nav-link text-dark" href="#gallery">Gallery</a>
@@ -66,11 +66,10 @@
             <a class="nav-link text-dark" href="csractivities.html">CSR Partnerships</a>
           </li>
           <li class="nav-item pl-lg-3 pr-lg-3">
-            <a class="nav-link text-dark" href="#contact">Contact</a>
+            <a class="nav-link text-dark" href="getinvolved.html">Get Involved</a>
           </li>
           <li class="nav-item pl-lg-3 pr-lg-1">
-            <a class="btn button one nav-link pl-5 pr-5 text-white" style="color: #fff !important;" data-toggle="modal"
-              data-target="#myModal">Donate</a>
+            <a class="btn button one nav-link pl-5 pr-5 text-white" style="color: #fff !important;" data-toggle="modal" data-target="#myModal">Donate</a>
           </li>
         </ul>
       </div>
@@ -81,8 +80,8 @@
 
   <div class="d-block d-lg-none d-md-none mobile">
     <nav class="navbar navbar-expand-md navbar-light bg-light flex-nowrap fixed-top"
-      style="background: #fff !important;">
-      <a class="navbar-brand text-white" href="#"><img src="images/logoColour.png" style="height:45px;"></a>
+      style="background: #fff !important;box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);">
+      <a class="navbar-brand text-white" href="home.html"><img src="images/logoColour.png" style="height:45px;"></a>
       <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#exampleModal">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -91,19 +90,44 @@
       <div class="modal left fade" id="exampleModal" tabindex="" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content h-100" style="background:#0f0f0f !important;">
+          <div class="modal-content h-100" style="background:#212529 !important;">
             <div class="modal-body p-3">
               <div class="text-right">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal"><img
                     src="icons/close.png"></button>
               </div>
               <div class="nav flex-column">
-                <li><a href="#home" class="nav-item nav-link text-white">Home</a></li>
-                <li><a href="#ourfocus" class="nav-item nav-link text-white mt-3">About Us</a></li>
-                <li><a href="#liveprojects" class="nav-item nav-link text-white mt-3">Live Projects</a></li>
-                <li><a href="#news" class="nav-item nav-link text-white mt-3">News Articles</a></li>
-                <li><a href="#contact" class="nav-item nav-link text-white mt-3">Gallery</a></li>
-                <li><a href="csractivities.html" class="nav-item nav-link text-white mt-3">CSR Partnerships</a></li>
+                <nav>
+                  <ul class="mt-5 pl-3">
+                    <li><a href="trendedprojects.html" class="text-white text_decoration_none">Completed Projects</a>
+                    <li class="sub-menu mt-4"><a class="text-white text_decoration_none">Who we are <span><i></i></span></a>
+                      <ul class="pl-3">
+                        <li class="mt-4"><a href="certifications.html" class="text-white text_decoration_none">Our Certifications</a></li>
+                        <li class="mt-4"><a href="policies.html" class="text-white text_decoration_none">Our Policies</a></li>
+                      </ul>
+                    </li>
+                    <li class="mt-4"><a href="home.html#liveprojects" class="text-white text_decoration_none">Live Projects</a>
+                    <li class="mt-4"><a href="home.html#news" class="text-white text_decoration_none">News Articles</a>
+                    <li class="mt-4"><a href="csractivities.html" class="text-white text_decoration_none">CSR Partnerships</a>
+                    <li class="mt-4"><a href="getinvolved.html" class="text-white text_decoration_none">Get Involved</a>
+                  </ul>
+                </nav>
+                <!-- <nav class="mbl_nav">
+                  <ul>
+                    <li><a href="trendedprojects.html" class="nav-item nav-link text-white">Trended Projects</a></li>
+                    <li>
+                      <a href="#ourfocus" class="nav-item nav-link text-white mt-3">Why we are<span
+                          class="fa fa-plus"></span></a>
+                      <ul>
+                        <li><a href="#">Projects</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#liveprojects" class="nav-item nav-link text-white mt-3">Live Projects</a></li>
+                    <li><a href="#news" class="nav-item nav-link text-white mt-3">News Articles</a></li>
+
+                    <li><a href="csractivities.html" class="nav-item nav-link text-white mt-3">CSR Partnerships</a></li>
+                  </ul>
+                </nav> -->
               </div>
             </div>
 
@@ -111,8 +135,6 @@
         </div>
       </div>
     </div>
-    <!-- container -->
-    <!-- container -->
   </div>
   <!-- Mobile menu end -->
   <!-- slider start -->
@@ -127,23 +149,22 @@
     <div class="mt-lg-5 mt-5 mx-lg-3 row">
       <div class="col-lg-12 text-center">
         <div>
-          <h4 class="font-weight-bold">Trended Projects</h4>
+          <h4 class="font-weight-bold">Completed Projects</h4>
         </div>
       </div>
     </div>
-    <div class="mt-3 mt-lg-3 mt-md-4 mx-lg-3 row slider">
+    <div class="mt-3 mt-lg-3 mt-md-4 mx-lg-3 row slider completedprojects">
       <div class="col-12 testimonials">
         <div class="card mb-3">
           <div class="content">
-            <div class="card-img-wrap"><img src="images/355A1476.jpg" style="height: 200px;width: 100%"></div>
+            <div class="card-img-wrap"><img src="images/l&T.jpg" style="height: 200px;width: 100%"></div>
             <div class="content-section">
-              <h6 class="font_size_20px">Raise fund for the
-                food</h6>
-              <p class="font-weight-light mb-2"><span>₹50,000</span> raised out of <span>₹50,000</span></p>
+              <h6 class="font_size_20px">L&T Health Screening</h6>
+              <!-- <p class="font-weight-light mb-2"><span>₹50,000</span> raised out of <span>₹50,000</span></p>
               <div class="d-flex">
                 <div><p class="mb-0"><span><img src="images/target.svg" style="height: 25px;"></span></p></div>
                 <div><p class="text-success mt-1 ml-2">Target Achieved</p></div>
-              </div>
+              </div> -->
               <!-- <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
                   aria-valuemax="100"></div>
@@ -156,15 +177,13 @@
       <div class="col-12 testimonials">
         <div class="card">
           <div class="content">
-            <div class="card-img-wrap"><img src="images/dc-Cover-i0ogpjiagl2ek5jnc6l9v6nj76-20160703065146.Medi.jpeg"
+            <div class="card-img-wrap"><img src="images/IMG-20181104-WA0011.jpg"
                 style="height: 200px;width: 100%"></div>
             <div class="content-section">
-              <h6 class="font_size_20px"> Raise fund for the water</h6>
-              <p class="font-weight-light mb-2"><span>₹30,000</span> raised out of <span>₹30,000</span></p>
-              <div class="d-flex">
-                <div><p class="mb-0"><span><img src="images/target.svg" style="height: 25px;"></span></p></div>
-                <div><p class="text-success mt-1 ml-2">Target Achieved</p></div>
-              </div>
+              <h6 class="font_size_20px"> Vizag Bay Marathon
+
+              </h6>
+              
               <!-- <button type="button" class="btn button one text-white mt-4 pt-lg-2 pb-lg-2">Donate Now</button> -->
             </div>
           </div>
@@ -173,15 +192,17 @@
       <div class="col-12 testimonials">
         <div class="card">
           <div class="content">
-            <div class="card-img-wrap"><img src="images/dc-Cover-rc5oed4jk8c34sbvonjif85294-20160701074554.jpeg"
+            <div class="card-img-wrap"><img src="images/PrajaSakthi.jpg"
                 style="height: 200px;width: 100%"></div>
             <div class="content-section">
-              <h6 class="font_size_20px">Raise fund for the clothes</h6>
-              <p class="font-weight-light mb-2"><span>₹50,000</span> raised out of <span>₹50,000</span></p>
+              <h6 class="font_size_20px">Maitree-Mother and Child Screening 
+
+              </h6>
+              <!-- <p class="font-weight-light mb-2"><span>₹50,000</span> raised out of <span>₹50,000</span></p>
               <div class="d-flex">
                 <div><p class="mb-0"><span><img src="images/target.svg" style="height: 25px;"></span></p></div>
                 <div><p class="text-success mt-1 ml-2">Target Achieved</p></div>
-              </div>
+              </div> -->
               <!-- <button type="button" class="btn button one text-white mt-4 pt-lg-2 pb-lg-2">Donate Now</button> -->
             </div>
           </div>
@@ -191,20 +212,22 @@
         <div class="card">
           <div class="layer"></div>
           <div class="content">
-            <div class="card-img-wrap"><img src="images/IMG-20181104-WA0016.jpg" style="height: 200px;width: 100%;">
+            <div class="card-img-wrap"><img src="images/IMG-20190128-WA0044.jpg" style="height: 200px;width: 100%;">
             </div>
             <div class="content-section">
-              <h6 class="font_size_20px">Raise fund for Shelter</h6>
-              <p class="font-weight-light mb-2"><span>₹50,000</span> raised out of <span>₹50,000</span></p>
+              <h6 class="font_size_20px">Amaravati Marathon 
+              </h6>
+              <!-- <p class="font-weight-light mb-2"><span>₹50,000</span> raised out of <span>₹50,000</span></p>
               <div class="d-flex">
                 <div><p class="mb-0"><span><img src="images/target.svg" style="height: 25px;"></span></p></div>
                 <div><p class="text-success mt-1 ml-2">Target Achieved</p></div>
-              </div>
+              </div> -->
               <!-- <button type="button" class="btn button one text-white mt-4 pt-lg-2 pb-lg-2">Donate Now</button> -->
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   </div>
   <!-- Causes end -->
@@ -239,13 +262,30 @@
       <div class="row mx-lg-3 mt-5 mt-lg-0 mt-md-0">
         <div class="col-lg-3 mt-lg-5 mt-4">
           <div>
-            <a href="home.html"><img src="images/logo-Colour.png"
-              style="height: 60px;"></a>
+            <a href="home.html"><img src="images/logo-Colour.png" style="height: 60px;"></a>
           </div>
           <div>
             <p class="font-weight-light text-white mt-3">We are a group of doctors and responsible
               citizens who have come together to augment
               and incorporate changes</p>
+          </div>
+          <div>
+            <ul class="mt-md-3 pl-0 pl-lg-0 pl-md-0">
+              <li class="list_style_type_none mt-3 mt-lg-3 mt-md-3">
+                <a href="" target="_blank"
+                  class="text-white text_decoration_none"><img src="images/facebook.svg" style="height: 30px;"></a>
+                <a href="" target="_blank"
+                  class="text-white text_decoration_none ml-2"><img src="images/instagram.svg" style="height: 30px;"></a>
+                <a href="" target="_blank" class="text-white text_decoration_none ml-2"><img
+                    src="images/twitter.svg" style="height: 30px;"></a>
+                    <a href="" target="_blank" class="text-white text_decoration_none ml-2"><img
+                      src="images/linkedin (1).svg" style="height: 30px;"></a>
+                <!-- <a href="#" target="_blank" class="text-white text_decoration_none ml-2"><img
+                              src="images/linkedin.png"></a> -->
+              </li>
+
+
+            </ul>
           </div>
         </div>
         <div class="col-lg-3 mt-lg-5 mt-2">
@@ -303,23 +343,24 @@
               <p class="ml-3">Hyderabad, India</p>
             </li>
             <li class="text-white list_style_type_none font-weight-light mt-3"><span
-                class="fa fa-mobile mr-2"></span>+91 88855 00443</li>
+                class="fa fa-mobile mr-2"></span><a href="tel:+91 8885500443" class="text-white text_decoration_none">+91 88855 00443</a></li>
             <li class="text-white list_style_type_none font-weight-light mt-3"><span
-                class="fa fa-envelope-o mr-2"></span>info@deepindia.org</li>
+                class="fa fa-envelope-o mr-2"></span><a href="mailto:info@deepindia.org" class="text-white text_decoration_none">info@deepindia.org</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row" style="border-top:1px solid #fff;">
-        <div class="col-6 text-left">
+        <div class="col-lg-6 col-12 text-lg-left">
           <div class="pt-4">
             <small class="text-white">Deep Foundation © 2020 / All Rights Reserved</small>
           </div>
         </div>
-        <div class="col-6 text-right">
+        <div class="col-12 col-lg-6 text-lg-right">
           <div class="pt-4">
-            <small class="text-white">Powered By: Infoswift Corp dba: PACCORE / Pacific Core Solutions</small>
+            <small class="text-white">Powered By:<a href="http://paccore.com/" target="_blank"> <img
+                  src="images/paccore1.png" class="ml-2" style="height: 30px;"></a></small>
           </div>
         </div>
       </div>
@@ -388,6 +429,10 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script>
+    $('ul li').click(function(){
+      $(this).siblings().removeClass('active');
+      $(this).toggleClass('active');
+    });
     $(window).scroll(function () {
       if ($(this).scrollTop() > 0) {
         $(".navbar").removeClass("margin_remove");
