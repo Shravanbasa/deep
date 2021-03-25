@@ -49,7 +49,7 @@
   </div>
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-block d-md-block d-none margin_header"
-    style="background: #fff !important;box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);">
+    style="background: #fff !important;">
     <div class="container-fluid mx-lg-3">
       <a class="navbar-brand font-weight-bold pl-lg-0 text-white" href="home.html"><img src="images/logoColour.png"
           style="height: 60px;"></a>
@@ -61,27 +61,28 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-lg-auto">
           <li class="nav-item active pl-lg-3 pr-lg-3">
-            <a class="nav-link text-dark" href="trendedprojects.html">Trended Projects</a>
+            <a class="nav-link text-dark" href="trendedprojects.html">Completed Projects</a>
+          </li>
+          <li class="nav-item pl-lg-3 pr-lg-3 dropdown dropdown-slide dropdown-hover">
+            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="cursor: pointer;">
+              Who we are
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="certifications.html">Our Certifications</a>
+              <a class="dropdown-item" href="policies.html">Our Policies</a>
+            </div>
           </li>
           <li class="nav-item pl-lg-3 pr-lg-3">
-            <a class="nav-link text-dark" href="home.html">Who we are</a>
-          </li>
-          <li class="nav-item pl-lg-3 pr-lg-3">
-            <a class="nav-link text-dark" href="home.html">Live Projects</a>
+            <a class="nav-link text-dark" href="home.html#liveprojects">Live Projects</a>
           </li>
           <!-- <li class="nav-item pl-lg-3 pr-lg-3">
             <a class="nav-link text-dark" href="#news">Deep Insights</a>
           </li> -->
-          <li class="nav-item dropdown dropdown-slide dropdown-hover">
-            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false" style="cursor: pointer;">
-              Deep Insights
+          <li class="nav-item pl-lg-3 pr-lg-3">
+            <a class="nav-link text-dark" href="home.html#news">
+              News Articles
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="certifications.html">Our Certifications</a>
-              <a class="dropdown-item" href="home.html">News Articles</a>
-              <a class="dropdown-item" href="home.html">Gallery</a>
-            </div>
           </li>
           <!-- <li class="nav-item pl-lg-3 pr-lg-3">
             <a class="nav-link text-dark" href="#gallery">Gallery</a>
@@ -90,7 +91,7 @@
             <a class="nav-link text-dark active" href="csractivities.html">CSR Partnerships</a>
           </li>
           <li class="nav-item pl-lg-3 pr-lg-3">
-            <a class="nav-link text-dark" href="#contact">Contact</a>
+            <a class="nav-link text-dark" href="getinvolved.html">Get Involved</a>
           </li>
           <li class="nav-item pl-lg-3 pr-lg-1">
             <a class="btn button one nav-link pl-5 pr-5 text-white" style="color: #fff !important;" data-toggle="modal"
@@ -106,7 +107,7 @@
   <div class="d-block d-lg-none d-md-none mobile">
     <nav class="navbar navbar-expand-md navbar-light bg-light flex-nowrap fixed-top"
       style="background: #fff !important;">
-      <a class="navbar-brand text-white" href="#"><img src="images/logoColour.png" style="height:45px;"></a>
+      <a class="navbar-brand text-white" href="home.html"><img src="images/logoColour.png" style="height:45px;"></a>
       <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#exampleModal">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -115,20 +116,44 @@
       <div class="modal left fade" id="exampleModal" tabindex="" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content h-100" style="background:#0f0f0f !important;">
+          <div class="modal-content h-100" style="background:#212529 !important;">
             <div class="modal-body p-3">
               <div class="text-right">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal"><img
                     src="icons/close.png"></button>
               </div>
               <div class="nav flex-column">
-                <li><a href="home.html" class="nav-item nav-link text-white">Home</a></li>
-                <li><a href="home.html" class="nav-item nav-link text-white mt-3">About Us</a></li>
-                <li><a href="home.html" class="nav-item nav-link text-white mt-3">Live Projects</a></li>
-                <li><a href="home.html" class="nav-item nav-link text-white mt-3">News Articles</a></li>
-                <li><a class="nav-item nav-link text-white mt-3" href="home.html">Gallery</a></li>
-                <li><a href="home.html" class="nav-item nav-link text-white mt-3">contact</a></li>
-                <li><a href="csractivities.html" class="nav-item nav-link text-white mt-3">CSR Partnerships</a></li>
+                <nav>
+                  <ul class="mt-5 pl-3">
+                    <li><a href="trendedprojects.html" class="text-white text_decoration_none">Completed Projects</a>
+                    <li class="sub-menu mt-4"><a class="text-white text_decoration_none">Who we are <span><i></i></span></a>
+                      <ul class="pl-3">
+                        <li class="mt-4"><a href="certifications.html" class="text-white text_decoration_none">Our Certifications</a></li>
+                        <li class="mt-4"><a href="policies.html" class="text-white text_decoration_none">Our Policies</a></li>
+                      </ul>
+                    </li>
+                    <li class="mt-4"><a href="home.html#liveprojects" class="text-white text_decoration_none">Live Projects</a>
+                    <li class="mt-4"><a href="home.html#news" class="text-white text_decoration_none">News Articles</a>
+                    <li class="mt-4"><a href="csractivities.html" class="text-white text_decoration_none">CSR Partnerships</a>
+                    <li class="mt-4"><a href="getinvolved.html" class="text-white text_decoration_none">Get Involved</a>
+                  </ul>
+                </nav>
+                <!-- <nav class="mbl_nav">
+                  <ul>
+                    <li><a href="trendedprojects.html" class="nav-item nav-link text-white">Trended Projects</a></li>
+                    <li>
+                      <a href="#ourfocus" class="nav-item nav-link text-white mt-3">Why we are<span
+                          class="fa fa-plus"></span></a>
+                      <ul>
+                        <li><a href="#">Projects</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#liveprojects" class="nav-item nav-link text-white mt-3">Live Projects</a></li>
+                    <li><a href="#news" class="nav-item nav-link text-white mt-3">News Articles</a></li>
+
+                    <li><a href="csractivities.html" class="nav-item nav-link text-white mt-3">CSR Partnerships</a></li>
+                  </ul>
+                </nav> -->
               </div>
             </div>
 
@@ -136,8 +161,6 @@
         </div>
       </div>
     </div>
-    <!-- container -->
-    <!-- container -->
   </div>
   <!-- Mobile menu end -->
   <section>
@@ -222,10 +245,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/paccore.png" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -243,10 +266,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/Appolice-logo.png" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -266,10 +289,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/CARE Logo -Vizag copy.jpg" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -287,10 +310,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/BowlC_Logo-01.png" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -312,10 +335,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/OYO-03.png" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -333,10 +356,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/KVBM-LOGO.png" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -356,10 +379,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/STAR-MAA-MUSIC_logo-Blue.png" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -377,10 +400,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/RTI_LOGO-without-bg.png" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -402,10 +425,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/kinley logo.jpg" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -423,10 +446,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/Mirchi-Logo-12.png" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -446,10 +469,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/hioOJs97_200x200.jpg" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -467,10 +490,10 @@
                   style="box-shadow: 0 5px 20px -5px rgb(0 0 0 / 20%);border-radius: 5px;height: 170px;">
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-lg-3">
+                      <div class="col-lg-3 col-5">
                         <img src="images/hp.png" class="img-fluid">
                       </div>
-                      <div class="col-lg-9">
+                      <div class="col-lg-9 mt-3 mt-lg-0">
                         <div>
                           <h6 style="color: #d44e19;">Helped for a cause: Medical Kits to colleges</h6>
                         </div>
@@ -500,18 +523,36 @@
     </div>
   </section>
   <!-- footer start   -->
-  <section class="bg-footer mt-lg-5 pb-5 pb-lg-4 padding" id="contact" style="background-image: url('./images/Group 44.png');background-size: cover;">
+  <section class="bg-footer mt-lg-5 pb-lg-4 pb-5 padding" id="contact"
+    style="background-image: url('./images/Group 44.png');background-size: cover;">
     <div class="container-fluid">
       <div class="row mx-lg-3 mt-5 mt-lg-0 mt-md-0">
         <div class="col-lg-3 mt-lg-5 mt-4">
           <div>
-            <a href="home.html"><img src="images/logo-Colour.png"
-              style="height: 60px;"></a>
+            <a href="home.html"><img src="images/logo-Colour.png" style="height: 60px;"></a>
           </div>
           <div>
             <p class="font-weight-light text-white mt-3">We are a group of doctors and responsible
               citizens who have come together to augment
               and incorporate changes</p>
+          </div>
+          <div>
+            <ul class="mt-md-3 pl-0 pl-lg-0 pl-md-0">
+              <li class="list_style_type_none mt-3 mt-lg-3 mt-md-3">
+                <a href="" target="_blank"
+                  class="text-white text_decoration_none"><img src="images/facebook.svg" style="height: 30px;"></a>
+                <a href="" target="_blank"
+                  class="text-white text_decoration_none ml-2"><img src="images/instagram.svg" style="height: 30px;"></a>
+                <a href="" target="_blank" class="text-white text_decoration_none ml-2"><img
+                    src="images/twitter.svg" style="height: 30px;"></a>
+                    <a href="" target="_blank" class="text-white text_decoration_none ml-2"><img
+                      src="images/linkedin (1).svg" style="height: 30px;"></a>
+                <!-- <a href="#" target="_blank" class="text-white text_decoration_none ml-2"><img
+                              src="images/linkedin.png"></a> -->
+              </li>
+
+
+            </ul>
           </div>
         </div>
         <div class="col-lg-3 mt-lg-5 mt-2">
@@ -569,21 +610,24 @@
               <p class="ml-3">Hyderabad, India</p>
             </li>
             <li class="text-white list_style_type_none font-weight-light mt-3"><span
-                class="fa fa-mobile mr-2"></span>+91 88855 00443</li>
+                class="fa fa-mobile mr-2"></span><a href="tel:+91 8885500443" class="text-white text_decoration_none">+91 88855 00443</a></li>
+            <li class="text-white list_style_type_none font-weight-light mt-3"><span
+                class="fa fa-envelope-o mr-2"></span><a href="mailto:info@deepindia.org" class="text-white text_decoration_none">info@deepindia.org</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row" style="border-top:1px solid #fff;">
-        <div class="col-6 text-left">
+        <div class="col-lg-6 col-12 text-lg-left">
           <div class="pt-4">
             <small class="text-white">Deep Foundation © 2020 / All Rights Reserved</small>
           </div>
         </div>
-        <div class="col-6 text-right">
+        <div class="col-12 col-lg-6 text-lg-right">
           <div class="pt-4">
-            <small class="text-white">Powered By: Infoswift Corp dba: PACCORE / Pacific Core Solutions</small>
+            <small class="text-white">Powered By:<a href="http://paccore.com/" target="_blank"> <img
+                  src="images/paccore1.png" class="ml-2" style="height: 30px;"></a></small>
           </div>
         </div>
       </div>
@@ -665,6 +709,10 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script>
+    $('ul li').click(function(){
+      $(this).siblings().removeClass('active');
+      $(this).toggleClass('active');
+    });
     $(window).scroll(function () {
       if ($(this).scrollTop() > 0) {
         $(".navbar").removeClass("margin_remove");
